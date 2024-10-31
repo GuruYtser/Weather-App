@@ -71,7 +71,6 @@ main{
     justify-content: center;
     flex-direction: column;
     backdrop-filter: blur(5px);
-    transition: 10px;
 }
 .status {
     font-size: 40px;

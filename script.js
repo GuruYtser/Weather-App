@@ -19,7 +19,6 @@ async function weather(){
         <div class="humid">Humidity: ${humidity}%</div>
     </div>  
         `;
-    document.body.append(main2);
     if(temp <= 27){
         body.style.background = "url('assets/cold.jpg')";
         body.style.backgroundSize = "cover";
@@ -48,6 +47,7 @@ async function weather(){
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
+    document.body.append(main2);
     } catch(error){
       console.error(error);
       main2.innerHTML = `<h1>Error Occured</h1>`

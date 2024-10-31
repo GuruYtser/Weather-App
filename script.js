@@ -24,7 +24,7 @@ async function weather(){
         body.style.backgroundSize = "cover";
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `<div class="status">🧊</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
@@ -34,7 +34,7 @@ async function weather(){
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `
         <div class="status">☀️</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
@@ -43,7 +43,7 @@ async function weather(){
         body.style.backgroundSize = "cover";
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `<div class="status">❄️</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }

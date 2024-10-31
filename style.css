@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: url("assets/sunny.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.syudad{
+    height: 5vh;
+    width: 10vw;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani alternate 1s 1;
+    font-weight: 700;
+}
+.temperature{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    animation: ani alternate 1s 1;
+    font-weight: 700;
+}
+.humid{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    animation: ani alternate 1s 1;
+    font-weight: 700;
+}
+@keyframes ani{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.search input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5px;
+}
+main{
+    gap: 10px;
+    width: 15vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+.main2{
+    gap: 10px;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    transition: 10px;
+}
+.status {
+    font-size: 40px;
+}

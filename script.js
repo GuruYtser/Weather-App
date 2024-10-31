@@ -14,7 +14,7 @@ async function weather(){
     const {main: {temp, humidity}, name} = data;
     main2.innerHTML = `
     <div class="main2">
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>
     </div>  

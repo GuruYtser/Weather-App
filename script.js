@@ -14,18 +14,17 @@ async function weather(){
     const {main: {temp, humidity}, name} = data;
     main2.innerHTML = `
     <div class="main2">
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>
     </div>  
         `;
-    document.body.append(main2);
     if(temp <= 27){
         body.style.background = "url('assets/cold.jpg')";
         body.style.backgroundSize = "cover";
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `<div class="status">🧊</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
@@ -35,7 +34,7 @@ async function weather(){
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `
         <div class="status">☀️</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
@@ -44,10 +43,11 @@ async function weather(){
         body.style.backgroundSize = "cover";
         body.style.backgroundPosition = "center"; 
         main2.innerHTML = `<div class="status">❄️</div>
-        <div class="syudad">Place: ${name}</div>
+        <div class="syudad">${name}</div>
         <div class="temperature">Temperature: ${Math.round(temp)}°C</div>
         <div class="humid">Humidity: ${humidity}%</div>`
     }
+    document.body.append(main2);
     } catch(error){
       console.error(error);
       main2.innerHTML = `<h1>Error Occured</h1>`
